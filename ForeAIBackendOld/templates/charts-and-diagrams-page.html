@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% set active_page = "menu3" %}
+
+{% block content %}
+<h3>Графики для таблицы "mistake_type_sum_by_work"</h3>
+    <div id="viz_for_table" class="special_div">
+        <div>
+            <p>Корреляция по пирсону</p>
+            <img src="../static/corrtable.png">
+        </div>
+        <div>
+            <p>Распределение по типам</p>
+            <img src="../static/dots.png">
+        </div>
+    </div>
+{% endblock %}
