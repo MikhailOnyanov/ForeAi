@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..dependencies import fore_collection, collect_docs
+from ..dependencies import fore_collection, collect_docs, test_sites
 
 router = APIRouter()
 
@@ -14,17 +14,10 @@ async def read_user_me():
     return {"username": "fakecurrentuser"}
 
 
-@router.get("/users/{username}", tags=["users"])
-async def read_user(username: str):
-    return {"username": username}
-
-@router.post('/process_documentation')
+@router.post('/process_documentation', tags=["documentation"])
 def fetch_dataset():
-    data = request.get_json()
-    if 'sites' not in data:
-        sites = test_sites
-    else:
-        sites = data['sites']
+
+    sites = test_sites
 
     docs: list[dict] = collect_docs(sites)
 
