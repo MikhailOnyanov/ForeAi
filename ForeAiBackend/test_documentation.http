@@ -1,0 +1,32 @@
+# Test of Endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+
+###
+
+
+GET http://127.0.0.1:8000/docs/process_documentation
+Accept: application/json
+
+
+###
+
+
+GET http://127.0.0.1:8000/docs/get_vector?message=dimension
+Accept: application/json
+
+
+###
+
+
+GET http://127.0.0.1:8000/data/collection_info?collection_name=fore_collection
+Accept: application/json
+
+
+###
+
+
+GET http://127.0.0.1:8000/data/test
+Accept: application/json

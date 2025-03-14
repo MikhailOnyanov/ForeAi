@@ -8,11 +8,6 @@ from typing import Dict, Any
 import hashlib
 import json
 
-import chromadb
-
-chroma_client = chromadb.Client()
-fore_collection = chroma_client.create_collection(name="fore_collection")
-
 
 def get_simple_texts(bs_instance: BeautifulSoup) -> list:
     paragraphs_all = bs_instance.findAll('p')
@@ -76,11 +71,6 @@ def find_version(body):
     else:
         return ""
 
-import requests
-
-from .parsers import text_from_html, find_header, find_version
-
-
 # Метод собирает документацию по заданному массиву ссылок
 def collect_docs(sites: list) -> list[dict]:
     results = []
@@ -101,12 +91,9 @@ def collect_docs(sites: list) -> list[dict]:
     return results
 
 
-
 def dict_hash(dictionary: Dict[str, Any]) -> str:
     """MD5 hash of a dictionary."""
     dhash = hashlib.md5()
-    # We need to sort arguments so {'a': 1, 'b': 2} is
-    # the same as {'b': 2, 'a': 1}
     encoded = json.dumps(dictionary, sort_keys=True).encode()
     dhash.update(encoded)
     return dhash.hexdigest()
