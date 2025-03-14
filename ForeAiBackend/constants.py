@@ -4,3 +4,8 @@ test_sites = ['https://help.fsight.ru/ru/mergedProjects/fore/02_generalinfo/fore
               'https://help.fsight.ru/9.9/ru/mergedProjects/kedims/kedims_title.htm',
               'https://help.fsight.ru/9.9/ru/mergedProjects/kedims/class/kedims_class.htm',
               'https://help.fsight.ru/9.9/ru/mergedProjects/kedims/interface/idimtextcriteria/idimtextcriteria.text.htm']
+
+client_info = {
+        "client_type": "http",
+        "client_kwargs": {"host": "127.0.0.1", "port": 8001},
+}
