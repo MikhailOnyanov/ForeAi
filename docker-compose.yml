@@ -56,29 +56,6 @@ services:
     networks:
       - backend
 
-
-  postgres_exporter:
-    container_name: exporter_container
-    image: prometheuscommunity/postgres-exporter:v0.15.0
-    environment:
-      DATA_SOURCE_URI: "postgres:5432/foreaidb?sslmode=disable"
-      DATA_SOURCE_USER: "admin"
-      DATA_SOURCE_PASS: "admin"
-      PG_EXPORTER_EXTEND_QUERY_PATH: "/etc/postgres_exporter/queries.yaml"
-    volumes:
-      - ./queries.yaml:/etc/postgres_exporter/queries.yaml:ro
-    ports:
-      - "9187:9187"
-    restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 500M
-    networks:
-      - backend
-
-
   fore-ai-backend:
     env_file:
       - path: ForeAiBackend/app/docker/.env
@@ -101,6 +78,21 @@ services:
         - "8000:8000"
       networks:
         - backend
+
+  fore-ai-chatbot:
+    env_file:
+      - path: ForeAITgBot/docker/.env
+        required: true
+    container_name: fore-ai-chatbot
+    image: fore-ai-tg-bot:latest
+    ports:
+      - "88:88"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - backend
+
 
 volumes:
   foreai-data:

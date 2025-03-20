@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 60s
+scrape_configs:
+  - job_name: 'monitoringjob'
+    dns_sd_configs:
+      - names: [ 'fore-ai-chatbot' ]
+        type: 'A'
+        port: 88
+    metrics_path: '/actuator/prometheus'
