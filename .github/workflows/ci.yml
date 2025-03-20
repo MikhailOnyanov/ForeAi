@@ -20,7 +20,7 @@ jobs:
           POSTGRES_USER: ${{ vars.POSTGRES_USER }}
           POSTGRES_PASSWORD: ${{ vars.POSTGRES_PASSWORD }}
         ports:
-          - 5433:5432
+          - 5432:5432  # Изменено с 5433 на 5432
         options: >-
           --health-cmd "pg_isready -U ${{ vars.POSTGRES_USER }} -d ${{ vars.POSTGRES_DB }}"
           --health-interval 10s
@@ -36,9 +36,8 @@ jobs:
         image: michaloni/foreai:v1
         ports:
           - 80:80
-        
         env:
-          DATABASE_CONNECTION_STRING: postgresql://admin:admin@localhost:5433/foreaidb
+          DATABASE_CONNECTION_STRING: postgresql://admin:admin@postgres_container:5432/foreaidb  # Используем имя контейнера
           CHROMA_HOST: ${{ vars.CHROMA_HOST }}
           CHROMA_PORT: ${{ vars.CHROMA_PORT }}
         options: >-
@@ -48,12 +47,17 @@ jobs:
           --health-retries 5
 
     steps:
-    - name: Wait for Backend to be Ready
-      run: |
-        echo "ENVS ARE CHROMA_HOST: ${{ vars.CHROMA_HOST }} CHROMA_PORT: ${{ vars.CHROMA_PORT }}"
-
     - name: Checkout Repository
       uses: actions/checkout@v3
+
+    - name: Wait for PostgreSQL to be Ready
+      run: |
+        echo "Waiting for PostgreSQL to be ready..."
+        until PGPASSWORD=${{ vars.POSTGRES_PASSWORD }} psql -h postgres_container -U ${{ vars.POSTGRES_USER }} -d ${{ vars.POSTGRES_DB }} -c '\q'; do
+          echo "Waiting for PostgreSQL..."
+          sleep 5
+        done
+        echo "PostgreSQL is ready!"
 
     - name: Set up Python
       uses: actions/setup-python@v3
@@ -78,5 +82,4 @@ jobs:
       env:
         BASE_URL: "http://localhost:80"
       run: |
-        echo "will run pytest tests"
-        echo "end"
+        pytest tests/
