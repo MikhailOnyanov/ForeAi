@@ -61,7 +61,7 @@ services:
       - path: ForeAiBackend/app/docker/.env
         required: true
     container_name: fore-ai-back-dev
-    image: fore-ai-backend:latest
+    image: michaloni/foreai:v1
     ports:
       - "80:80"
     depends_on:
