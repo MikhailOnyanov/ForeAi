@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      postgres:
+      postgres_container:
         image: postgres:17.4-alpine3.21
         env:
-          POSTGRES_DB: foreaidb
-          POSTGRES_USER: admin
-          POSTGRES_PASSWORD: admin
+          POSTGRES_DB: ${{ POSTGRES_DB }}
+          POSTGRES_USER: ${{ POSTGRES_USER }}
+          POSTGRES_PASSWORD: ${{ POSTGRES_PASSWORD }}
         ports:
           - 5433:5432
         options: >-
@@ -27,20 +27,17 @@ jobs:
           --health-timeout 5s
           --health-retries 5
 
-      chromadb:
+      chroma-server:
         image: chromadb/chroma:latest
-        env:
-          CHROMA_HOST: chroma-server
-          CHROMA_PORT: 8000
         ports:
           - 8000:8000
 
-      backend:
-        image: fore-ai-backend:latest
+      fore-ai-backend:
+        image: michaloni/foreai:v1
         ports:
           - 80:80
         env:
-          DATABASE_URL: postgresql://admin:admin@postgres_container:5432/foreaidb
+          DATABASE_URL: ${{ DATABASE_URL }}
           CHROMA_HOST: ${{ CHROMA_HOST }}
         options: >-
           --health-cmd "curl --fail http://localhost:80/docs || exit 1"
