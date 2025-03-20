@@ -16,13 +16,13 @@ jobs:
       postgres_container:
         image: postgres:17.4-alpine3.21
         env:
-          POSTGRES_DB: ${{ POSTGRES_DB }}
-          POSTGRES_USER: ${{ POSTGRES_USER }}
-          POSTGRES_PASSWORD: ${{ POSTGRES_PASSWORD }}
+          POSTGRES_DB: ${{ vars.POSTGRES_DB }}
+          POSTGRES_USER: ${{ vars.POSTGRES_USER }}
+          POSTGRES_PASSWORD: ${{ vars.POSTGRES_PASSWORD }}
         ports:
           - 5433:5432
         options: >-
-          --health-cmd "pg_isready -U ${{ POSTGRES_USER }} -d ${{ POSTGRES_DB }}"
+          --health-cmd "pg_isready -U ${{ vars.POSTGRES_USER }} -d ${{ vars.POSTGRES_DB }}"
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
@@ -37,8 +37,8 @@ jobs:
         ports:
           - 80:80
         env:
-          DATABASE_URL: ${{ DATABASE_URL }}
-          CHROMA_HOST: ${{ CHROMA_HOST }}
+          DATABASE_URL: ${{ vars.DATABASE_URL }}
+          CHROMA_HOST: ${{ vars.CHROMA_HOST }}
         options: >-
           --health-cmd "curl --fail http://localhost:80/docs || exit 1"
           --health-interval 10s
