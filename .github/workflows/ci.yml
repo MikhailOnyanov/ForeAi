@@ -37,7 +37,7 @@ jobs:
         ports:
           - 80:80
         env:
-          DATABASE_URL: ${{ vars.DATABASE_CONNECTION_STRING }}
+          DATABASE_CONNECTION_STRING: ${{ vars.DATABASE_CONNECTION_STRING }}
           CHROMA_HOST: ${{ vars.CHROMA_HOST }}
           CHROMA_PORT: ${{ vars.CHROMA_PORT }}
         options: >-
