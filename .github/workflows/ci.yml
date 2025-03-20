@@ -16,13 +16,13 @@ jobs:
       postgres_container:
         image: postgres:17.4-alpine3.21
         env:
-          POSTGRES_DB: ${{ env.POSTGRES_DB }}
-          POSTGRES_USER: ${{ env.POSTGRES_USER }}
-          POSTGRES_PASSWORD: ${{ env.POSTGRES_PASSWORD }}
+          POSTGRES_DB: ${{ vars.POSTGRES_DB }}
+          POSTGRES_USER: ${{ vars.POSTGRES_USER }}
+          POSTGRES_PASSWORD: ${{ vars.POSTGRES_PASSWORD }}
         ports:
           - 5433:5432
         options: >-
-          --health-cmd "pg_isready -U ${{ env.POSTGRES_USER }} -d ${{ env.POSTGRES_DB }}"
+          --health-cmd "pg_isready -U ${{ vars.POSTGRES_USER }} -d ${{ vars.POSTGRES_DB }}"
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
@@ -36,10 +36,11 @@ jobs:
         image: michaloni/foreai:v1
         ports:
           - 80:80
+        
         env:
           DATABASE_CONNECTION_STRING: postgresql://admin:admin@postgres_container:5432/foreaidb
-          CHROMA_HOST: ${{ env.CHROMA_HOST }}
-          CHROMA_PORT: ${{ env.CHROMA_PORT }}
+          CHROMA_HOST: ${{ vars.CHROMA_HOST }}
+          CHROMA_PORT: ${{ vars.CHROMA_PORT }}
         options: >-
           --health-cmd "curl --fail http://localhost:80/docs || exit 1"
           --health-interval 10s
@@ -47,6 +48,10 @@ jobs:
           --health-retries 5
 
     steps:
+    - name: Wait for Backend to be Ready
+      run: |
+        echo "ENVS ARE CHROMA_HOST: ${{ vars.CHROMA_HOST }} CHROMA_PORT: ${{ vars.CHROMA_PORT }}"
+
     - name: Checkout Repository
       uses: actions/checkout@v3
 
