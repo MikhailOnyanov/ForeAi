@@ -6,12 +6,12 @@ from constants import TELEGRAM_API_KEY, MAX_SYM, FORE_AI_BACKEND_API
 import telebot
 from telebot import types
 
-
 bot = telebot.TeleBot(TELEGRAM_API_KEY)
-
 
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)  # Outputs debug messages to console.
+
+EXCEPTION_TEXT = "Не могу обработать запрос :( \nСейчас сервис недоступен 😢, но мы делаем всё, чтобы восстановить его работу! ⚙️"
 
 
 @bot.message_handler(commands=['start'])
@@ -23,11 +23,13 @@ def start(message):
 
 
 def get_message_from_ai_model(message):
-    api = FORE_AI_BACKEND_API
-    logger.debug(api)
-    response = requests.get(api, params={"message": message})
-    logger.debug(response)
-    return response.text
+    logger.info(f"Sending query {message} to {FORE_AI_BACKEND_API}")
+    try:
+        response = requests.get(FORE_AI_BACKEND_API, params={"message": message})
+        logger.debug(response)
+        return response.text
+    except Exception as ex:
+        logger.exception(ex)
 
 
 @bot.message_handler(content_types=['text'])
@@ -37,18 +39,23 @@ def get_text_messages(message):
         btn0 = types.KeyboardButton("Задать вопрос ai помощнику Fore ")
         markup.add(btn0)
         bot.send_message(message.from_user.id, '❓ Задайте интересующий вас вопрос', reply_markup=markup)  # Bot response
-
     else:
-        nearest_answer = get_message_from_ai_model(message.text)
-        if len(nearest_answer) > MAX_SYM:
-            for x in range(0, len(nearest_answer), MAX_SYM):
-                bot.reply_to(message, text=nearest_answer[x:x + MAX_SYM])
-        else:
-            bot.reply_to(message, text=nearest_answer)
+        try:
+            nearest_answer = get_message_from_ai_model(message.text)
+            prepared = nearest_answer.strip('\"').replace("\\n", "\n")
+            if len(nearest_answer) > MAX_SYM:
+                for x in range(0, len(nearest_answer), MAX_SYM):
+                    bot.reply_to(message, text=prepared[x:x + MAX_SYM])
+            else:
+                bot.reply_to(message, text=prepared)
+        except Exception as ex:
+            bot.reply_to(message, text=EXCEPTION_TEXT)
+            logger.exception(ex)
 
-        # bot.send_message(message.from_user.id,
-        #                  f'Ответ векторной базы данных: {nearest_answer}',
-        #                  parse_mode='Markdown')
 
 def run():
-    bot.polling(non_stop=True, interval=0) # Required for running bot
+    logger.info("BOT IS UP")
+    bot.polling(non_stop=True, interval=0)  # Required for running bot
+
+
+run()

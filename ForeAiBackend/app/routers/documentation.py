@@ -30,10 +30,11 @@ def process_documentation_to_collection(collection_name: str):
 
 @router.get('/get_vector')
 def get_vector(collection_name: str, message: str):
+    logger.info(f"GETTING VECTORS FOR {message}")
     db_service = VectorDBProvider.get_vector_db_service("chroma", client_info)
     if not db_service:
         return JSONResponse(content=jsonable_encoder("Col is down"), status_code=503, media_type="application/json")
-    query_params = {'n_results': '3', 'query_texts': [message]}
+    query_params = {'n_results': 3, 'query_texts': [message]}
     db_results = db_service.query_collection(collection_name, query_params)
     text_res = []
     for corpus in zip(db_results["documents"], db_results["metadatas"]):

@@ -20,3 +20,7 @@ class BaseVectorDBService(ABC):
     def add_to_collection(self, docs: List[dict], collection_name: str):
         """Добавляет документы в коллекцию."""
         raise NotImplementedError
+
+    def list_collections(self):
+        """Возвращает список коллекций."""
+        raise NotImplementedError
