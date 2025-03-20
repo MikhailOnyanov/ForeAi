@@ -37,8 +37,9 @@ jobs:
         ports:
           - 80:80
         env:
-          DATABASE_URL: ${{ vars.DATABASE_URL }}
+          DATABASE_URL: ${{ vars.DATABASE_CONNECTION_STRING }}
           CHROMA_HOST: ${{ vars.CHROMA_HOST }}
+          CHROMA_PORT: ${{ vars.CHROMA_PORT }}
         options: >-
           --health-cmd "curl --fail http://localhost:80/docs || exit 1"
           --health-interval 10s
