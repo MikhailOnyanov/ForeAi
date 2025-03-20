@@ -38,7 +38,7 @@ jobs:
           - 80:80
         
         env:
-          DATABASE_CONNECTION_STRING: postgresql://admin:admin@postgres_container:5432/foreaidb
+          DATABASE_CONNECTION_STRING: postgresql://admin:admin@localhost:5432/foreaidb
           CHROMA_HOST: ${{ vars.CHROMA_HOST }}
           CHROMA_PORT: ${{ vars.CHROMA_PORT }}
         options: >-
