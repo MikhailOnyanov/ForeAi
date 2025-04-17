@@ -10,13 +10,19 @@ router = APIRouter(
     tags=["message"]
 )
 
+INTERNAL_SERVER_ERROR = HTTPException(
+    status_code=500,
+    detail={"message": "Internal Server Error"},
+)
 
 @router.get('/generate_response')
 def reply_user_message(message: str):
     try:
+        logger.info(f"Received message: {message}")
         service = MessageService()
+        logger.info(f"Initialized message service")
         response_message = service.make_response(message)
         return JSONResponse(content=jsonable_encoder(response_message), status_code=200, media_type="application/json")
     except Exception as e:
         logger.exception(e)
-        raise HTTPException(status_code=404, detail=f"Bad news...")
+        raise INTERNAL_SERVER_ERROR

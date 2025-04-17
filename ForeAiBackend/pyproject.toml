@@ -8,10 +8,18 @@ dependencies = [
     "beautifulsoup4",
     "chromadb",
     "fastapi[standard]>=0.115.11",
+    "httpx>=0.28.1",
     "psycopg2-binary>=2.9.10",
+    "pytest>=8.3.5",
     "python-dotenv>=1.0.1",
     "regex>=2024.11.6",
     "requests>=2.32.3",
     "sqlmodel>=0.0.24",
     "uuid>=1.30",
 ]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"

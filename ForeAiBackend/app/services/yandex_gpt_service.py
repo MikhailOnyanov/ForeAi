@@ -1,4 +1,7 @@
+import json
 from typing import Any
+import requests
+
 import datetime
 from ..services.base_llm_service import BaseLLMService
 
@@ -24,26 +27,55 @@ class YandexGptService(BaseLLMService):
         :rtype:
         """
         # Some magic with strings and preprompt ...
-        pre_prompt_text = f"Help developer to solve task: {input_message}, here some docs: {[str(doc) for doc in knowledge_text_corpus]}"
+        text_with_preprompt = f"Помоги решить вопрос пользователя: {input_message}, вот документация которая может пригодиться: {[str(doc) for doc in knowledge_text_corpus]}"
         # ... API CALL ...
-        # TODO: Для тестов сделан 1 элемент
-        # api_response = self.send_to_api(pre_prompt_text)
-        api_response = {"Data": f"{knowledge_text_corpus[0]}"}
+        api_response = self.send_to_api(text_with_preprompt)
         # ... UNPACKING RESPONSE TEXT FROM JSON...
         llm_text_response = self.unpack_api_response(api_response)
-        # ... PREPARE MESSAGE FOR END-USER
-        text_for_end_user = self.prepare_message_for_end_user(input_message, llm_text_response)
-        return text_for_end_user
+        return llm_text_response
 
-    def send_to_api(self, prepared_text: str) -> dict[str, Any]:
+    def send_to_api(self, user_query_text: str) -> dict[str, Any]:
+        """
+        Отправляет запрос в YandexGPT
+        :param user_query_text: Текст запроса к системе
+        :return:
+        :rtype:
+        """
+        prompt = {
+            "modelUri": "gpt://b1g7mr6mvg5ennk001ja/yandexgpt-lite",
+            "completionOptions": {
+                "stream": False,
+                "temperature": 0.6,
+                "maxTokens": "2000"
+            },
+            "messages": [
+                {
+                    "role": "system",
+                    "text": "Ты ассистент по разработке на языке программирования Fore, способный помочь разработчику платформы Форсайт и разработчику Fore сделать его работу."
+                },
+                {
+                    "role": "user",
+                    "text": f"{user_query_text}"
+                }
+            ]
+        }
+
+        url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": "Api-Key X"
+        }
+
+        response = requests.post(url, headers=headers, json=prompt)
+
         return {
             "Status": 200,
-            "Data": prepared_text,
+            "Data": json.loads(response.text),
             "Meta": f"{datetime.datetime.now().isoformat()}"
         }
 
     def unpack_api_response(self, api_response: dict) -> str:
-        return api_response["Data"]
+        data_to_unpack = api_response["Data"]["result"]["alternatives"][0]
+        response_message_text = data_to_unpack["message"]["text"]
 
-    def prepare_message_for_end_user(self, input_message: str, llm_response: str) -> str:
-        return f"Конечно, я могу помочь Вам с вопросом по {input_message}, попробуйте начать с этого:\n{llm_response}"
+        return response_message_text

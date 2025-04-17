@@ -22,12 +22,17 @@ def start(message):
     bot.send_message(message.from_user.id, "👋 Привет! Я твой бот-помошник!", reply_markup=markup)
 
 
-def get_message_from_ai_model(message):
+def get_message_from_ai_model(message) -> str | None:
     logger.info(f"Sending query {message} to {FORE_AI_BACKEND_API}")
     try:
         response = requests.get(FORE_AI_BACKEND_API, params={"message": message})
-        logger.debug(response)
-        return response.text
+        logger.debug(f"Response from service: {response}, {response.status_code}, {response.text}")
+        if response.status_code == 500:
+            logger.warning(f"Message service returned 500, raising exception")
+        elif response.status_code == 200:
+            return response.text
+        else:
+            logger.warning(f"Message service returned {response.status_code}, raising exception")
     except Exception as ex:
         logger.exception(ex)
 

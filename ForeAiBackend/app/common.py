@@ -7,7 +7,7 @@ ForeAI API helps you do awesome stuff. 🚀
 def get_chroma_creds() -> dict:
     chroma_service_config = {
         "client_type": "http",
-        "client_kwargs": {"host": "127.0.0.1", "port": 8001},
+        "client_kwargs": {"host": "127.0.0.1", "port": 8000},
     }
     env_creds = get_all_env_creds_or_none(["CHROMA_HOST", "CHROMA_PORT"])
     if env_creds:

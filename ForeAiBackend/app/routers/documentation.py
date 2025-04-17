@@ -1,3 +1,5 @@
+import json
+
 from fastapi import APIRouter
 from fastapi.encoders import jsonable_encoder
 from starlette.responses import JSONResponse
@@ -15,9 +17,12 @@ router = APIRouter(
 
 
 @router.get('/process_documentation')
-def process_documentation_to_collection(collection_name: str):
+def process_documentation_to_collection(collection_name: str, save_locally: bool = True):
     try:
         docs: list[dict] = parse_foresight_docs.collect_foresight_docs(test_sites)
+        if save_locally:
+            with open("parsed_data/docs.json", "w") as file:
+                json.dump(docs, file, ensure_ascii=False)
         db_service = VectorDBProvider.get_vector_db_service("chroma", client_info)
         if not db_service:
             return JSONResponse(content=jsonable_encoder("Col is down"), status_code=503, media_type="application/json")

@@ -17,6 +17,10 @@ class BaseVectorDBService(ABC):
         """Выполняет запрос к коллекции."""
         raise NotImplementedError
 
+    def create_collection(self, collection_name: str) -> bool:
+        """Создаёт коллекцию."""
+        raise NotImplementedError
+
     def add_to_collection(self, docs: List[dict], collection_name: str):
         """Добавляет документы в коллекцию."""
         raise NotImplementedError
