@@ -1,3 +1,4 @@
+import logging
 import os
 from typing import Annotated
 
@@ -5,12 +6,11 @@ from dotenv import load_dotenv
 from fastapi import Depends
 from sqlmodel import SQLModel, Session, create_engine
 from .models import user
-from .dependencies import logger
 
-
+logger = logging.getLogger(__name__)
 # Loading .env parameters
 
-db_uri = os.getenv("DATABASE_CONNECTION_STRING", "postgresql://admin:admin@127.0.0.1:5433/foreaidb")
+db_uri = os.getenv("DATABASE_CONNECTION_STRING", "postgresql://admin:admin@postgres:5432/foreaidb")
 
 logger.info(f"Connecting to DB with uri: {db_uri}")
 engine = create_engine(db_uri)

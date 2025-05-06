@@ -1,20 +1,27 @@
 import chromadb
-from chromadb import Collection
+from chromadb import Collection, Client
 
 from ..services.base_vector_db_service import BaseVectorDBService
 from ..services.hashing_service import HashingService
-from ..dependencies import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 class ChromaService(BaseVectorDBService):
     def __init__(self, client_info: dict):
         self.client_info = client_info
-        self.client = self.init_client(client_info)
+        self.client: Client = self.init_client(client_info)
 
     @staticmethod
     def init_client(client_info: dict):
         if client_info.get('client_type', None) == 'http':
             logger.info(f"Connecting to chroma server with creds: {client_info.get('client_kwargs')}")
-            return chromadb.HttpClient(**client_info.get('client_kwargs'))
+            try:
+                client = chromadb.HttpClient(**client_info.get('client_kwargs'))
+                return client
+            except Exception as ex:
+                logger.exception(f"TIMEOUT WHILE CONNECTING TO CHROMA: {ex}")
+                return None
         else:
             raise NotImplementedError(f'Type {client_info.get('client_type', None)} is not implemented.')
 
@@ -24,19 +31,16 @@ class ChromaService(BaseVectorDBService):
             logger.info(f'Get collection {collection_name} success')
             return collection
         except Exception as ex:
-            logger.warning(f'Get collection {collection_name} failed: {ex}')
+            logger.warning(f'Collection {collection_name} does not exist!')
             return None
 
     def create_collection(self, collection_name: str) -> bool:
         try:
             self.client.create_collection(collection_name)
             return True
-        # If collection does not exist Chroma raises exception
-        except ValueError as ex:
-            logger.info(f'Collection {collection_name} already exists')
-            return False
+        # If collection exists
         except Exception as ex:
-            logger.warning(f'Get collection {collection_name} failed: {ex}')
+            logger.info(f'Collection {collection_name} already exists')
             return False
 
     def get_collection_info(self, collection_name: str) -> dict | None:

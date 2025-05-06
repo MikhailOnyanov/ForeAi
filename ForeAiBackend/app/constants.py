@@ -1,4 +1,7 @@
 from .common import get_chroma_creds
+from typing import Annotated
+from fastapi import Depends
+
 test_sites = ['https://help.fsight.ru/ru/mergedProjects/fore/02_generalinfo/fore_gening_const.htm',
               'https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_synt_visible.htm',
               'https://help.fsight.ru/9.9/ru/mergedProjects/Assembly/System_Assembly.htm',
@@ -6,4 +9,7 @@ test_sites = ['https://help.fsight.ru/ru/mergedProjects/fore/02_generalinfo/fore
               'https://help.fsight.ru/9.9/ru/mergedProjects/kedims/class/kedims_class.htm',
               'https://help.fsight.ru/9.9/ru/mergedProjects/kedims/interface/idimtextcriteria/idimtextcriteria.text.htm']
 
-client_info = get_chroma_creds()
+chroma_service_config = {
+    "client_type": "http",
+    "client_kwargs": {"host": "chroma-server", "port": 8000},
+}

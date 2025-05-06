@@ -1,8 +1,10 @@
 from ..internal.foresight_docs_logic import parse_chromadb_query_to_foresight_documents_old
 from ..services.llm_service_provider import LLMServiceProvider
 from ..services.vector_db_provider import VectorDBProvider
-from ..constants import client_info
-from ..dependencies import logger
+from ..constants import chroma_service_config
+import logging
+
+logger = logging.getLogger(__name__)
 
 class MessageService:
     def __init__(self):
@@ -11,7 +13,7 @@ class MessageService:
         pass
 
     def make_response(self, message):
-        db_service = VectorDBProvider.get_vector_db_service("chroma", client_info)
+        db_service = VectorDBProvider.get_vector_db_service("chroma", chroma_service_config)
         llm_service = LLMServiceProvider.get_llm_service("YandexGPT")
         logger.info("Got YandexGPT service")
         query_params = {'n_results': 3, 'query_texts': [message]}

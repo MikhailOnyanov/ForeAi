@@ -3,7 +3,9 @@ import unicodedata
 import requests
 from bs4 import BeautifulSoup, Comment
 from typing import Dict, List
-from ..dependencies import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def get_simple_texts(bs_instance: BeautifulSoup) -> List[str]:

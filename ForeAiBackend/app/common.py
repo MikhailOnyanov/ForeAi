@@ -1,8 +1,5 @@
 import os
 
-description = """
-ForeAI API helps you do awesome stuff. 🚀
-"""
 
 def get_chroma_creds() -> dict:
     chroma_service_config = {

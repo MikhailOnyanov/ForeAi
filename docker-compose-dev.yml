@@ -62,8 +62,6 @@ services:
         required: true
     container_name: fore-ai-back-dev
     build: ./ForeAiBackend
-    volumes:
-      - ./ForeAiBackend/app:/code/app
     ports:
       - "80:80"
     depends_on:
@@ -73,7 +71,7 @@ services:
       - backend
 
   chroma-server:
-      image: chromadb/chroma:1.0.0
+      image: chromadb/chroma:latest
       volumes:
         - chroma_data:/data
       ports:

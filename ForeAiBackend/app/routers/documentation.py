@@ -3,11 +3,14 @@ import json
 from fastapi import APIRouter
 from fastapi.encoders import jsonable_encoder
 from starlette.responses import JSONResponse
+from starlette.requests import Request
 
 from ..services.vector_db_provider import VectorDBProvider
-from ..constants import test_sites, client_info
+from ..constants import test_sites, chroma_service_config
 from ..services import parse_foresight_docs
-from ..dependencies import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(
     prefix="/docs",
@@ -23,7 +26,7 @@ def process_documentation_to_collection(collection_name: str, save_locally: bool
         if save_locally:
             with open("parsed_data/docs.json", "w") as file:
                 json.dump(docs, file, ensure_ascii=False)
-        db_service = VectorDBProvider.get_vector_db_service("chroma", client_info)
+        db_service = VectorDBProvider.get_vector_db_service("chroma", chroma_service_config)
         if not db_service:
             return JSONResponse(content=jsonable_encoder("Col is down"), status_code=503, media_type="application/json")
         db_service.add_to_collection(docs, collection_name)
@@ -34,13 +37,15 @@ def process_documentation_to_collection(collection_name: str, save_locally: bool
 
 
 @router.get('/get_vector')
-def get_vector(collection_name: str, message: str):
+def get_vector(request: Request, collection_name: str, message: str):
     logger.info(f"GETTING VECTORS FOR {message}")
-    db_service = VectorDBProvider.get_vector_db_service("chroma", client_info)
-    if not db_service:
-        return JSONResponse(content=jsonable_encoder("Col is down"), status_code=503, media_type="application/json")
+    vector_db = request.state.vector_db
+    if not vector_db:
+        vector_db = VectorDBProvider.get_vector_db_service("chroma", chroma_service_config)
+        if not vector_db:
+            return JSONResponse(content=jsonable_encoder("Col is down"), status_code=503, media_type="application/json")
     query_params = {'n_results': 3, 'query_texts': [message]}
-    db_results = db_service.query_collection(collection_name, query_params)
+    db_results = vector_db.query_collection(collection_name, query_params)
     text_res = []
     for corpus in zip(db_results["documents"], db_results["metadatas"]):
         text_res.append(corpus)

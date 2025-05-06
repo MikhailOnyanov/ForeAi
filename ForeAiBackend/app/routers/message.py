@@ -3,7 +3,9 @@ from fastapi import APIRouter, HTTPException
 from fastapi.encoders import jsonable_encoder
 
 from ..services.message_service import MessageService
-from ..dependencies import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(
     prefix="/message",
