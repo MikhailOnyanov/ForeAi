@@ -4,8 +4,6 @@ from .db import SQLModel, get_session, create_db_and_tables
 from .routers import documentation, data, message, customer_service
 import logging
 from contextlib import asynccontextmanager
-from .constants import chroma_service_config
-from .dependencies import initialize_vector_db
 
 logger = logging.getLogger(__name__)
 
@@ -15,7 +13,6 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     # Load ChromaDB
     logger.info("INITIALIZING LIFESPAN")
-    app.state.vector_db = initialize_vector_db("chroma", chroma_service_config)
     yield
     # After app shutdown
 

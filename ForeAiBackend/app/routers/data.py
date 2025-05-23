@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException, Request
 from fastapi.encoders import jsonable_encoder
 from starlette.responses import JSONResponse
 
-from ..constants import chroma_service_config
+from app.dependencies import ChromaServiceDep
 from ..services.vector_db_provider import VectorDBProvider
 from ..models.collections import CollectionCreate, CollectionPublic
 
@@ -17,9 +17,8 @@ router = APIRouter(
 
 
 @router.get('/collection_info')
-def peek_data(collection_name: str):
+def peek_data(db_service: ChromaServiceDep, collection_name: str):
     try:
-        db_service = VectorDBProvider.get_vector_db_service("chroma", chroma_service_config)
         if not db_service:
             return JSONResponse(content=jsonable_encoder("Vector database is down"), status_code=503,
                                 media_type="application/json")
@@ -31,22 +30,21 @@ def peek_data(collection_name: str):
         raise HTTPException(status_code=500, detail=f"Exception: {ex}")
 
 @router.get('/list_collections')
-def list_collections(request: Request):
+def list_collections(vector_db: ChromaServiceDep):
     try:
-        vector_db = request.app.state.vector_db
         if not vector_db:
             return JSONResponse(content=jsonable_encoder("Chroma is down"), status_code=503,
                                 media_type="application/json")
         info = vector_db.list_collections()
+        logger.info(f"TEST!!!:{info}")
         return JSONResponse(content=jsonable_encoder(info), status_code=200, media_type="application/json")
     except Exception as ex:
         logger.exception(f"Exception message: {ex}")
         raise HTTPException(status_code=500, detail=f"Exception: {ex}")
 
 @router.post('/create_collection/', response_model=CollectionPublic)
-def create_collection(collection: CollectionCreate, request: Request):
+def create_collection(vector_db: ChromaServiceDep, collection: CollectionCreate):
     try:
-        vector_db = request.app.state.vector_db
         if not vector_db:
             return JSONResponse(content=jsonable_encoder("Chroma is down"), status_code=500, media_type="application/json")
         if vector_db.create_collection(collection.collection_name):

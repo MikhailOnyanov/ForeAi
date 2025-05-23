@@ -1,10 +1,14 @@
+import logging
 import json
 from typing import Any
 import requests
 
 import datetime
 from ..services.base_llm_service import BaseLLMService
+from app.conifg import YandexGPTConfig
 
+
+logger = logging.getLogger(__name__)
 
 class YandexGptService(BaseLLMService):
     def __init__(self):
@@ -27,6 +31,8 @@ class YandexGptService(BaseLLMService):
         :rtype:
         """
         # Some magic with strings and preprompt ...
+        rag_prompt = [str(doc) for doc in knowledge_text_corpus]
+        logger.info(f"RAG_PROMPT WILL BE: {rag_prompt}")
         text_with_preprompt = f"Помоги решить вопрос пользователя: {input_message}, вот документация которая может пригодиться: {[str(doc) for doc in knowledge_text_corpus]}"
         # ... API CALL ...
         api_response = self.send_to_api(text_with_preprompt)
@@ -63,7 +69,7 @@ class YandexGptService(BaseLLMService):
         url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
         headers = {
             "Content-Type": "application/json",
-            "Authorization": "Api-Key X"
+            "Authorization": f"Api-Key {YandexGPTConfig().API_KEY}"
         }
 
         response = requests.post(url, headers=headers, json=prompt)
@@ -75,6 +81,7 @@ class YandexGptService(BaseLLMService):
         }
 
     def unpack_api_response(self, api_response: dict) -> str:
+        logger.info(f"RESPONSE_DATA: {api_response}")
         data_to_unpack = api_response["Data"]["result"]["alternatives"][0]
         response_message_text = data_to_unpack["message"]["text"]
 

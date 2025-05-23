@@ -1,0 +1,1538 @@
+  [
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/fore_title.htm",
+    "Title": "Руководство по языку Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/08_operators/fore_if.htm",
+    "Title": "Условные операторы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/description_property.htm",
+    "Title": "Свойства: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/07_operations/operations_of_the_creation_object.htm",
+    "Title": "Преобразования типов: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/05_classes/newobject.htm",
+    "Title": "Конструкторы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_formalparams.htm",
+    "Title": "Формальные параметры: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/10_processing_exceptions/built_in_classes_of_the_exceptions.htm",
+    "Title": "Системные классы исключительных ситуаций"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/compiler_errors.htm",
+    "Title": "Сообщения компилятора Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_interfaces.htm",
+    "Title": "Интерфейсы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/08_operators/pyimport.htm",
+    "Title": "Оператор Pyimport"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/08_operators/fore_break.htm",
+    "Title": "Операторы перехода: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/07_operations/operations_relations.htm",
+    "Title": "Операции отношения"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/02_generalinfo/fore_geninf_vars.htm",
+    "Title": "Переменные: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/01_dictionary/fore_coment.htm",
+    "Title": "Комментарии: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_enums.htm",
+    "Title": "Перечисления: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/08_operators/fore_with.htm",
+    "Title": "Оператор With"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_comimport.htm",
+    "Title": "Оператор Comimport"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/07_operations/arithmetical_operations.htm",
+    "Title": "Арифметические операции: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/07_operations/logical_operations.htm",
+    "Title": "Логические операции: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_deleg.htm",
+    "Title": "Делегаты и события: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/10_processing_exceptions/processing_the_exceptions.htm",
+    "Title": "Исключительные ситуации: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/02_generalinfo/fore_gening_const.htm",
+    "Title": "Константы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_namespace.htm",
+    "Title": "Пространства имён: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/08_operators/fore_for.htm",
+    "Title": "Циклические операторы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_synt_procandfunc.htm",
+    "Title": "Процедуры и функции: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/02_generalinfo/fore_classesandobjects.htm",
+    "Title": "Классы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/08_operators/fore_dispose.htm",
+    "Title": "Оператор Dispose"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_synt_visible.htm",
+    "Title": "Область видимости: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/06_syntrules/fore_syntarrays.htm",
+    "Title": "Массивы: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/03_datatypes/fore_datatypes.htm",
+    "Title": "Типы данных: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/07_operations/unary_operations.htm",
+    "Title": "Унарные операции: Fore"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabnotnumberexception/tabnotnumberexception.htm",
+    "Title": "TabNotNumberException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/directorynotfoundexception/directorynotfoundexception.htm",
+    "Title": "DirectoryNotFoundException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/argumentoutofrangeexception/argumentoutofrangeexception.htm",
+    "Title": "ArgumentOutOfRangeException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/pathtoolongexception/pathtoolongexception.htm",
+    "Title": "PathTooLongException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/filenotfoundexception/filenotfoundexception.htm",
+    "Title": "FileNotFoundException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/overflowexception/overflowexception.htm",
+    "Title": "OverflowException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/argumentexception/argumentexception.htm",
+    "Title": "ArgumentException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/indexoutofrangeexception/indexoutofrangeexception.htm",
+    "Title": "IndexOutOfRangeException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/arithmeticexception/arithmeticexception.htm",
+    "Title": "ArithmeticException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/dividebyzeroexception/dividebyzeroexception.htm",
+    "Title": "DivideByZeroException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/exception/exception.htm",
+    "Title": "Exception"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/endofstreamexception/endofstreamexception.htm",
+    "Title": "EndOfStreamException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/stackoverflowexception/stackoverflowexception.htm",
+    "Title": "StackOverflowException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/win32exception/win32exception.htm",
+    "Title": "Win32Exception"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/oleexception/oleexception.htm",
+    "Title": "OleException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/accessviolationexception/accessviolationexception.htm",
+    "Title": "AccessViolationException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/ioexception/ioexception.htm",
+    "Title": "IOException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/argumentnullexception/argumentnullexception.htm",
+    "Title": "ArgumentNullException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/notfinitenumberexception/notfinitenumberexception.htm",
+    "Title": "NotFiniteNumberException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1030.htm",
+    "Title": "Ошибка: В классе может быть только одно свойство 'по умолчанию'"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1065.htm",
+    "Title": "Ошибка: После set ожидается идентификатор процедуры"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1073.htm",
+    "Title": "Ошибка: Ожидается символ 'символ'"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1022.htm",
+    "Title": "Ошибка: Интерфейс <имяИнтерфейса> не определен"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1138.htm",
+    "Title": "Ошибка: Операторы для пользовательских классов не поддерживаются"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1006.htm",
+    "Title": "Ошибка: Константное выражение должно быть не меньше <значение>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1136.htm",
+    "Title": "Ошибка: <имяТипа> не является пространством имен"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1091.htm",
+    "Title": "Ошибка: Определены не все обязательные параметры <метод> <имя>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1039.htm",
+    "Title": "Ошибка: Недопустимое использование inherited вне тела нестатического метода"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1146.htm",
+    "Title": "Ошибка: В сборке <имяСборки> используется модуль с именем системного модуля <имяСистемнойСборки>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1083.htm",
+    "Title": "Ошибка: Повторное определение идентификатора"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1049.htm",
+    "Title": "Ошибка: Директива <имяДирективы> недопустима для <имяЧлена>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1040.htm",
+    "Title": "Ошибка: Метод <имяМетода> в базовом классе не найден"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1057.htm",
+    "Title": "Ошибка: Метод <имяМетода> интерфейса <имяИнтерфейса> не реализован"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1029.htm",
+    "Title": "Ошибка: Тип параметра <имяПараметра> метода <имяМетода> не совместим с типом свойства <имяСвойства>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1113.htm",
+    "Title": "Ошибка: Недопустимый тип <имяТипа>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1059.htm",
+    "Title": "Ошибка: Ожидается get или set"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1063.htm",
+    "Title": "Ошибка: Ожидается имя класса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1075.htm",
+    "Title": "Ошибка: Ожидается строка с GUID библиотеки"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1045.htm",
+    "Title": "Ошибка: Недопустимое использование свойства, доступного только для записи"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1101.htm",
+    "Title": "Ошибка: Избыточное количество индексов"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1093.htm",
+    "Title": "Ошибка: Многострочный комментарий не завершен. Ожидается символ }"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1144.htm",
+    "Title": "Ошибка: Недопустимое переопределение метода в интерфейсе"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1131.htm",
+    "Title": "Ошибка: Идентификатор <идентификатор> встречается в сборках <имяСборки1> и <имяСборки2>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1077.htm",
+    "Title": "Ошибка: Оператор new недопустим для простых типов"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1034.htm",
+    "Title": "Ошибка: Не удалось загрузить библиотеку <имяБиблиотеки>. Текст ошибки: <ошибка>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1020.htm",
+    "Title": "Ошибка: Индексированному свойству нельзя ставить в соответствие поля"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/sysmsgerror_errorcompilation.htm",
+    "Title": "Ошибка: Компиляция сборки 'идентификатор сборки' завершилась с ошибкой"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1035.htm",
+    "Title": "Ошибка: Ожидается константное выражение"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1078.htm",
+    "Title": "Ошибка: Определение процедуры <имяЧлена> в классе <имяКласса1> отличается от предыдущего определения в базовом классе <имяКласса2>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1060.htm",
+    "Title": "Ошибка: Ожидается выражение логического типа"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1107.htm",
+    "Title": "Ошибка: Недопустимое сочетание статических и нестатических членов класса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1116.htm",
+    "Title": "Ошибка: Тип <имяТипа> не поддерживается оператором For Each"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1141.htm",
+    "Title": "Ошибка: Определение процедуры в классе отличается от определения события в классе"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1069.htm",
+    "Title": "Ошибка: Ожидается оператор"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1026.htm",
+    "Title": "Ошибка: Метод <имяМетода> должен содержать <количествоПараметров> параметр(а,ов)"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1043.htm",
+    "Title": "Ошибка: Недопустимое использование оператора <оператор> в блоке finally"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1095.htm",
+    "Title": "Ошибка: Синтаксическая ошибка в символьной константе"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1009.htm",
+    "Title": "Ошибка: Операция <имяОперации> недопустима для операнда типа <имяТипа>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1133.htm",
+    "Title": "Ошибка: Параметр ParamArray не может быть использован в качестве именованного"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1124.htm",
+    "Title": "Ошибка: Повторное определение константы"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1118.htm",
+    "Title": "Ошибка: Ожидается имя делегата"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1105.htm",
+    "Title": "Ошибка: Перечисление должно содержать определение хотя бы одной константы"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1024.htm",
+    "Title": "Ошибка: Константа типа <типДанных> вышла за пределы допустимых значений"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1067.htm",
+    "Title": "Ошибка: Ожидается ключевое слово <ключевоеСлово>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1041.htm",
+    "Title": "Ошибка: Переопределение метода с директивой Final недопустимо"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1097.htm",
+    "Title": "Ошибка: Идентификатор превышает максимальную допустимую длину 255 символов"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1084.htm",
+    "Title": "Ошибка: Из статического метода нельзя обратится к нестатическому полю"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1037.htm",
+    "Title": "Ошибка: Операция <имяОперации> недопустима для операндов типа <имяТипа1> и типа <имяТипа2>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msghint_31501.htm",
+    "Title": "Предупреждение: Переменная/Константа <наименование> не используется"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.chr.htm",
+    "Title": "Char.Chr"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.htm",
+    "Title": "Array: Класс"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1042.htm",
+    "Title": "Ошибка: Для параметра по ссылке ожидается поле или переменная типа <тип>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1098.htm",
+    "Title": "Ошибка: Недопустимая директива default для неиндексированного свойства"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1072.htm",
+    "Title": "Ошибка: Ожидается переменная типа <тип>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1068.htm",
+    "Title": "Ошибка: В качестве счетчика цикла ожидается локальная переменная"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1012.htm",
+    "Title": "Ошибка: <имяТипа> не является классом или перечислением, либо в описании используется"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1147.htm",
+    "Title": "Ошибка: Ожидается определение метода или свойства интерфейса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1008.htm",
+    "Title": "Ошибка: Объект класса <имяКласса1> не может быть приведен к классу <имяКласса2>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1038.htm",
+    "Title": "Ошибка: <имяТипа> не является подпрограммой"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1025.htm",
+    "Title": "Ошибка: Конструктор с именем <имяКонструктора> не найден"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1134.htm",
+    "Title": "Ошибка: Блок Imports должен предшествовать всем другим блокам"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1027.htm",
+    "Title": "Ошибка: Нельзя вызвать нестатический метод из статического"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1044.htm",
+    "Title": "Ошибка: Недопустимое использование оператора <оператор> вне цикла"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1087.htm",
+    "Title": "Ошибка: Свойство <имяСвойства> доступно только для чтения"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1061.htm",
+    "Title": "Ошибка: Ожидается выражение целого типа"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1036.htm",
+    "Title": "Ошибка: Ожидается выражение простого типа"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1010.htm",
+    "Title": "Ошибка: По левую сторону от . должен быть объект, класс, перечисление или модуль"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1142.htm",
+    "Title": "Ошибка: Используется циклическое наследование класса <имяКласса> от самого себя"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1079.htm",
+    "Title": "Ошибка: Определены не все обязательные индексы при записи свойства <имяСвойства>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1149.htm",
+    "Title": "Ошибка: Определены не все обязательные индексы при чтении свойства <имяСвойства>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1123.htm",
+    "Title": "Ошибка: Недопустимая директива default для статического свойства"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1019.htm",
+    "Title": "Ошибка: Для данного объекта класса <имяКласса> отсутствует свойство 'по умолчанию'"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1140.htm",
+    "Title": "Ошибка: В теле функции не найден оператор return"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgwarning_31403.htm",
+    "Title": "Информация: Свойство/метод <имяЧлена> является устаревшим"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1132.htm",
+    "Title": "Ошибка: Типом параметра ParamArray должен быть указан массив без указания размера"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1046.htm",
+    "Title": "Ошибка: Недопустимое использование счетчика цикла <имяПеременной>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1139.htm",
+    "Title": "Ошибка: Пользовательский интерфейс не может наследоваться от системного интерфейса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1033.htm",
+    "Title": "Ошибка: Типы <имяТипа1> и <имяТипа2> не совместимы"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1109.htm",
+    "Title": "Ошибка: Сборка <имяСборки1> подключается циклически: <имяСборки1>-<имяСборки2>-<имяСборки1>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1094.htm",
+    "Title": "Ошибка: Неоконченная строка. Ожидается символ <\">"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1051.htm",
+    "Title": "Ошибка: Неизвестный идентификатор <идентификатор>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1021.htm",
+    "Title": "Ошибка: Интерфейс может наследоваться только от интерфейса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1114.htm",
+    "Title": "Ошибка: Оператор new[] допустим только для простых типов"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1064.htm",
+    "Title": "Ошибка: После <спецификаторДоступа> ожидается идентификатор поля или метода"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1028.htm",
+    "Title": "Ошибка: Тип параметра <имяПараметра> метода <имяМетода> не совместим с типом индекса <индекс> свойства <имяСвойства>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1017.htm",
+    "Title": "Ошибка: Параметр <имяПараметра> уже встречался в списке"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1080.htm",
+    "Title": "Ошибка: В методе <имяМетода> отсутствует параметр с именем <имяПараметра>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1058.htm",
+    "Title": "Ошибка: Ожидается определение блока модуля"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1076.htm",
+    "Title": "Ошибка: Оператор new недопустим для интерфейсов"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1062.htm",
+    "Title": "Ошибка: Ожидается идентификатор <идентификатор>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1130.htm",
+    "Title": "Ошибка: Ожидается определение метода, поля или свойства класса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1023.htm",
+    "Title": "Ошибка: Класс не может наследоваться от интерфейса"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1066.htm",
+    "Title": "Ошибка: Ожидается идентификатор"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1120.htm",
+    "Title": "Ошибка: Делегат ссылается на метод, не принадлежащий классу"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1119.htm",
+    "Title": "Ошибка: Недопустимое использование делегата"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1082.htm",
+    "Title": "Ошибка: Параметр, передаваемый по ссылке, не может иметь значения по умолчанию"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1056.htm",
+    "Title": "Ошибка: Нельзя наследовать от класса <имяКласса>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1013.htm",
+    "Title": "Ошибка: Метод, реализующий индексированное свойство не может содержать параметры, передаваемые по ссылке"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1110.htm",
+    "Title": "Ошибка: Слишком много методов в импортируемом интерфейсе"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1102.htm",
+    "Title": "Ошибка: Несовместимые размерности массивов"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1145.htm",
+    "Title": "Ошибка: Недоступно для использования в веб"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1048.htm",
+    "Title": "Ошибка: Левая часть оператора := не допускает присваивания"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1005.htm",
+    "Title": "Ошибка: Ожидается выражение"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1122.htm",
+    "Title": "Ошибка: Встретился недопустимый символ <символ>"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1148.htm",
+    "Title": "Ошибка: После get ожидается идентификатор функции"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1007.htm",
+    "Title": "Ошибка: Выражение не может быть присвоено списку переменных"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/fore/11_compiler_errors/msgerror_1152.htm",
+    "Title": "Ошибка: Метод <имяМетода> не может содержать параметры, передаваемые по ссылке"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/uidevenv/01_development_environment/02_work_in_development_environment/way_to_compiling.htm",
+    "Title": "Способ компиляции сборок"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.getupperbound.htm",
+    "Title": "Array.GetUpperBound"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.gettype.htm",
+    "Title": "Array.GetType"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.rank.htm",
+    "Title": "Array.Rank"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.operation.htm",
+    "Title": "Array.Operation"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.getlowerbound.htm",
+    "Title": "Array.GetLowerBound"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.tovariantarray.htm",
+    "Title": "Array.ToVariantArray"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.length.htm",
+    "Title": "Array.Length"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.tosimplearray.htm",
+    "Title": "Array.ToSimpleArray"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.concat.htm",
+    "Title": "Array.Concat"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.indexof.htm",
+    "Title": "Array.IndexOf"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.lastindexof.htm",
+    "Title": "Array.LastIndexOf"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.arrayoperation.htm",
+    "Title": "Array.ArrayOperation"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/array/array.sort.htm",
+    "Title": "Array.Sort"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.htm",
+    "Title": "Класс Char"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/ioleexception/ioleexception.code.htm",
+    "Title": "IOleException.Code"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/ioleexception/ioleexception.htm",
+    "Title": "IOleException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iwin32exception/iwin32exception.htm",
+    "Title": "IWin32Exception"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iwin32exception/iwin32exception.code.htm",
+    "Title": "IWin32Exception.Code"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iargumentexception/iargumentexception.htm",
+    "Title": "IArgumentException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iargumentexception/iargumentexception.paramname.htm",
+    "Title": "IArgumentException.ParamName"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/system_classes.htm",
+    "Title": "Классы сборки System"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/exception/exception.create.htm",
+    "Title": "Exception.Create"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/modio_class.htm",
+    "Title": "Классы сборки IO"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.messageid.htm",
+    "Title": "IException.MessageID"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.message.htm",
+    "Title": "IException.Message"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.line.htm",
+    "Title": "IException.Line"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.source.htm",
+    "Title": "IException.Source"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabnodataexception/tabnodataexception.createex.htm",
+    "Title": "TabNoDataException.CreateEx"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheet_class.htm",
+    "Title": "Классы сборки Tab"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.reporterror.htm",
+    "Title": "IException.ReportError"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.htm",
+    "Title": "IException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/iexception/iexception.nestedexception.htm",
+    "Title": "IException.NestedException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabbeforeobjectanglechangeeventargs/tabbeforeobjectanglechangeeventargs.htm",
+    "Title": "TabBeforeObjectAngleChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onscalechange.htm",
+    "Title": "TabSheetBox.OnScaleChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/tabsheet_delegate.htm",
+    "Title": "Делегаты сборки Tab"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabobjectresizingeventargs/tabobjectresizingeventargs.htm",
+    "Title": "TabObjectResizingEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabscaleeventargs/tabscaleeventargs.htm",
+    "Title": "TabScaleEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabuserinteractiveselectionchangeeventargs/tabuserinteractiveselectionchangeeventargs.htm",
+    "Title": "TabUserInteractiveSelectionChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetexporter/tabsheetexporter.htm",
+    "Title": "TabSheetExporter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforeedit.htm",
+    "Title": "TabSheetBox.OnBeforeEdit"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onobjectactivate.htm",
+    "Title": "TabSheetBox.OnObjectActivate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/tabsheet_interface.htm",
+    "Title": "Интерфейсы сборки Tab"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabexpanderchangedeventargs/tabexpanderchangedeventargs.htm",
+    "Title": "TabExpanderChangedEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabobjectchangeeventargs/tabobjectchangeeventargs.htm",
+    "Title": "TabObjectChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellbeforeeditbaseeventargs/tabcellbeforeeditbaseeventargs.htm",
+    "Title": "TabCellBeforeEditBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabrequiredparametersexception/tabrequiredparametersexception.htm",
+    "Title": "TabRequiredParametersException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellformatdlg/tabcellformatdlg.htm",
+    "Title": "TabCellFormatDlg"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabprotectionfailedeventargs/tabprotectionfailedeventargs.htm",
+    "Title": "TabProtectionFailedEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforecellchange.htm",
+    "Title": "TabSheetBox.OnBeforeCellChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabbeforeobjectrectchangeeventargs/tabbeforeobjectrectchangeeventargs.htm",
+    "Title": "TabBeforeObjectRectChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellbaseeventargs/tabcellbaseeventargs.htm",
+    "Title": "TabCellBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheet/tabsheet.htm",
+    "Title": "TabSheet"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellcontentchangeeventargs/tabcellcontentchangeeventargs.htm",
+    "Title": "TabCellContentChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcolumnresizeeventargs/tabcolumnresizeeventargs.htm",
+    "Title": "TabColumnResizeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabtablestyles/tabtablestyles.htm",
+    "Title": "TabTableStyles"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabinteractiveselectioneventargs/tabinteractiveselectioneventargs.htm",
+    "Title": "TabInteractiveSelectionEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabunknownparameterexception/tabunknownparameterexception.htm",
+    "Title": "TabUnknownParameterException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabformatconditions/tabformatconditions.htm",
+    "Title": "TabFormatConditions"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabrowresizingeventargs/tabrowresizingeventargs.htm",
+    "Title": "TabRowResizingEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcolumnresizingeventargs/tabcolumnresizingeventargs.htm",
+    "Title": "TabColumnResizingEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabautofilterbaseeventargs/tabautofilterbaseeventargs.htm",
+    "Title": "TabAutoFilterBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabscalebaseeventargs/tabscalebaseeventargs.htm",
+    "Title": "TabScaleBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabtablestyle/tabtablestyle.htm",
+    "Title": "TabTableStyle"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncolumnclick.htm",
+    "Title": "TabSheetBox.OnColumnClick"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcelleventargs/tabcelleventargs.htm",
+    "Title": "TabCellEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabfootnotesbox/tabfootnotesbox.htm",
+    "Title": "TabFootnotesBox"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellbeforechangebaseeventargs/tabcellbeforechangebaseeventargs.htm",
+    "Title": "TabCellBeforeChangeBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcolumneventargs/tabcolumneventargs.htm",
+    "Title": "TabColumnEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabroweventargs/tabroweventargs.htm",
+    "Title": "TabRowEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncellchange.htm",
+    "Title": "TabSheetBox.OnCellChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabobjectbaseeventargs/tabobjectbaseeventargs.htm",
+    "Title": "TabObjectBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.htm",
+    "Title": "TabSheetBox: Класс"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabrangeinserteventargs/tabrangeinserteventargs.htm",
+    "Title": "TabRangeInsertEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabinteractiveselectionchangeeventargs/tabinteractiveselectionchangeeventargs.htm",
+    "Title": "TabInteractiveSelectionChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcolumnbaseeventargs/tabcolumnbaseeventargs.htm",
+    "Title": "TabColumnBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabobjectexporter/tabobjectexporter.htm",
+    "Title": "TabObjectExporter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onchangecellcontent.htm",
+    "Title": "TabSheetBox.OnChangeCellContent"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/uitabsheet/uitabsheet.htm",
+    "Title": "UiTabSheet: Класс"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabrangedeleteeventargs/tabrangedeleteeventargs.htm",
+    "Title": "TabRangeDeleteEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabiconexporter/tabiconexporter.htm",
+    "Title": "TabIconExporter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellafterediteventargs/tabcellafterediteventargs.htm",
+    "Title": "TabCellAfterEditEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellvalidate/tabcellvalidate.htm",
+    "Title": "TabCellValidate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/static/static_elements.htm",
+    "Title": "Статические методы сборки Tab"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabrowresizeeventargs/tabrowresizeeventargs.htm",
+    "Title": "TabRowResizeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabautofiltereventargs/tabautofiltereventargs.htm",
+    "Title": "TabAutoFilterEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/uidevenv/02_components_constructor_forms/03_components_of_the_access_to_data/lanerbox.htm",
+    "Title": "LanerBox: Компонент"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabuserinteractiveselectioneventargs/tabuserinteractiveselectioneventargs.htm",
+    "Title": "TabUserInteractiveSelectionEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabobjectmovingeventargs/tabobjectmovingeventargs.htm",
+    "Title": "TabObjectMovingEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellaftereditbaseeventargs/tabcellaftereditbaseeventargs.htm",
+    "Title": "TabCellAfterEditBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabpagesettings/tabpagesettings.htm",
+    "Title": "TabPageSettings"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabhyperlinkclickeventargs/tabhyperlinkclickeventargs.htm",
+    "Title": "TabHyperlinkClickEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellbeforeediteventargs/tabcellbeforeediteventargs.htm",
+    "Title": "TabCellBeforeEditEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabobjecteventargs/tabobjecteventargs.htm",
+    "Title": "TabObjectEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/uidevenv/02_components_constructor_forms/03_components_of_the_access_to_data/tabsheetbox.htm",
+    "Title": "TabSheetBox: Компонент"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellbeforechangeeventargs/tabcellbeforechangeeventargs.htm",
+    "Title": "TabCellBeforeChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabrowbaseeventargs/tabrowbaseeventargs.htm",
+    "Title": "TabRowBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onprotectionfail.htm",
+    "Title": "TabSheetBox.OnProtectionFail"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbaseeventargs/tabsheetbaseeventargs.htm",
+    "Title": "TabSheetBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabprotectionfailedbaseeventargs/tabprotectionfailedbaseeventargs.htm",
+    "Title": "TabProtectionFailedBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tablefilter/tablefilter.htm",
+    "Title": "TableFilter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onautofilter.htm",
+    "Title": "TabSheetBox.OnAutoFilter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellcontentchangebaseeventargs/tabcellcontentchangebaseeventargs.htm",
+    "Title": "TabCellContentChangeBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabeditoreventargs/tabeditoreventargs.htm",
+    "Title": "TabEditorEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/enums/tabsheet_enums.htm",
+    "Title": "Перечисления сборки Tab"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabbeforeexpanderchangedeventargs/tabbeforeexpanderchangedeventargs.htm",
+    "Title": "TabBeforeExpanderChangedEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheeteventargs/tabsheeteventargs.htm",
+    "Title": "TabSheetEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onafteredit.htm",
+    "Title": "TabSheetBox.OnAfterEdit"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellchangeeventargs/tabcellchangeeventargs.htm",
+    "Title": "TabCellChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabhyperlinkclickbaseeventargs/tabhyperlinkclickbaseeventargs.htm",
+    "Title": "TabHyperlinkClickBaseEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabcellstyle/tabcellstyle.htm",
+    "Title": "TabCellStyle"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabnodataexception/tabnodataexception.htm",
+    "Title": "TabNoDataException"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabrange/itabrange.iferror.htm",
+    "Title": "ITabRange.IfError"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/binaryreader/binaryreader.htm",
+    "Title": "BinaryReader"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onrowclick.htm",
+    "Title": "TabSheetBox.OnRowClick"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/binarywriter/binarywriter.htm",
+    "Title": "BinaryWriter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/filestream/filestream.htm",
+    "Title": "FileStream"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/directory/directory.htm",
+    "Title": "Directory"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/textreader/textreader.htm",
+    "Title": "TextReader"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/memorystream/memorystream.htm",
+    "Title": "MemoryStream"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/ziparchive/ziparchive.htm",
+    "Title": "ZipArchive"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/directoryinfo/directoryinfo.htm",
+    "Title": "DirectoryInfo"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/iostream/iostream.htm",
+    "Title": "IOStream"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/enums/modio_enums.htm",
+    "Title": "Перечисления сборки IO"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/file/file.htm",
+    "Title": "File"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/textwriter/textwriter.htm",
+    "Title": "TextWriter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/interface/modio_interface.htm",
+    "Title": "Интерфейсы сборки IO"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/fileinfo/fileinfo.htm",
+    "Title": "FileInfo"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/modio/class/path/path.htm",
+    "Title": "Path"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/broadcast/broadcast.htm",
+    "Title": "Broadcast"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/guid/guid.htm",
+    "Title": "Класс Guid"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/variant/variant.htm",
+    "Title": "Класс Variant"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/matrix/matrix.htm",
+    "Title": "Matrix"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/runtimeinterop/runtimeinterop.htm",
+    "Title": "RuntimeInterop"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/guidgenerator/guidgenerator.htm",
+    "Title": "GuidGenerator"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/boolean/boolean.htm",
+    "Title": "Boolean: Класс"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/int64/int64.htm",
+    "Title": "Класс Int64"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/jsonobjectbuilder/jsonobjectbuilder.htm",
+    "Title": "JsonObjectBuilder"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/double/double.htm",
+    "Title": "Класс Double"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/cultureinfo/cultureinfo.htm",
+    "Title": "CultureInfo"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/debug/debug.htm",
+    "Title": "Debug"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/jsondocument/jsondocument.htm",
+    "Title": "JsonDocument"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/currency/currency.htm",
+    "Title": "Класс Currency"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/integer/integer.htm",
+    "Title": "Класс Integer"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/timespan/timespan.htm",
+    "Title": "Класс TimeSpan"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/regex/regex.htm",
+    "Title": "Regex"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/object/object.htm",
+    "Title": "Object"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/matrixfactory/matrixfactory.htm",
+    "Title": "MatrixFactory"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/jsonarraybuilder/jsonarraybuilder.htm",
+    "Title": "JsonArrayBuilder"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/string/string.htm",
+    "Title": "Класс String"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/enums/system_enums.htm",
+    "Title": "Перечисления сборки System"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/expressionstringhandler/expressionstringhandler.htm",
+    "Title": "ExpressionStringHandler"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/syssettings/syssettings.htm",
+    "Title": "SysSettings"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/decimal/decimal.htm",
+    "Title": "Класс Decimal"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/datetime/datetime.htm",
+    "Title": "Класс DateTime"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/textconverter/textconverter.htm",
+    "Title": "TextConverter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/syseventlog/syseventlog.htm",
+    "Title": "SysEventLog"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/bindingmanager/bindingmanager.htm",
+    "Title": "BindingManager"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/interface/system_interface.htm",
+    "Title": "Интерфейсы сборки System"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.isdigit.htm",
+    "Title": "Char.IsDigit"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.asc.htm",
+    "Title": "Char.Asc"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.isletter.htm",
+    "Title": "Char.IsLetter"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.isletterordigit.htm",
+    "Title": "Char.IsLetterOrDigit"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.toupper.htm",
+    "Title": "Char.ToUpper"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.tolower.htm",
+    "Title": "Char.ToLower"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.ascii.htm",
+    "Title": "Char.ASCII"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.islower.htm",
+    "Title": "Char.IsLower"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/class/char/char.isupper.htm",
+    "Title": "Char.IsUpper"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/enums/arrayoperationtype.htm",
+    "Title": "ArrayOperationType"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/foresys/enums/forevarianttype.htm",
+    "Title": "ForeVariantType"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/developer/about_developing/development_environment_options.htm",
+    "Title": "Настройки редактора кода"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/uidevenv/01_development_environment/02_work_in_development_environment/run_debug.htm",
+    "Title": "Запуск и отладка"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforeexpanderchangeditabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeExpanderChangedITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforerowresizeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeRowResizeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeginselectionchange.htm",
+    "Title": "TabSheetBox.OnBeginSelectionChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onendinteractiveselectionchange.htm",
+    "Title": "TabSheetBox.OnEndInteractiveSelectionChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncellclick.htm",
+    "Title": "TabSheetBox.OnCellClick"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncellpictureclickitabsheetboxeventsdelegate.htm",
+    "Title": "OnCellPictureClickITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforecellschange.htm",
+    "Title": "TabSheetBox.OnBeforeCellsChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforeobjectchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeObjectChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onafterobjectchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnAfterObjectChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncellschange.htm",
+    "Title": "TabSheetBox.OnCellsChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforecellchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeCellChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforeexpanderchanged.htm",
+    "Title": "TabSheetBox.OnBeforeExpanderChanged"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncolumnresize.htm",
+    "Title": "TabSheetBox.OnColumnResize"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbegininteractiveselectionchange.htm",
+    "Title": "TabSheetBox.OnBeginInteractiveSelectionChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncolumnresizeitabsheetboxeventsdelegate.htm",
+    "Title": "OnColumnResizeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbegininteractiveselectionchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeginInteractiveSelectionChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncolumnresizing.htm",
+    "Title": "TabSheetBox.OnColumnResizing"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oncellpictureclick.htm",
+    "Title": "TabSheetBox.OnCellPictureClick"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncellschangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnCellsChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onafterobjectchange.htm",
+    "Title": "TabSheetBox.OnAfterObjectChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.oneditortextchanged.htm",
+    "Title": "TabSheetBox.OnEditorTextChanged"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onchangecellcontentitabsheetboxeventsdelegate.htm",
+    "Title": "OnChangeCellContentITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforecellschangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeCellsChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oneditortextchangeditabsheetboxeventsdelegate.htm",
+    "Title": "OnEditorTextChangedITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncellclickitabsheetboxeventsdelegate.htm",
+    "Title": "OnCellClickITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforecolumnresize.htm",
+    "Title": "TabSheetBox.OnBeforeColumnResize"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onendinteractiveselectionchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnEndInteractiveSelectionChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncellchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnCellChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeginselectionchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeginSelectionChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onendselectionchangeitabsheetboxeventsdelegate.htm",
+    "Title": "OnEndSelectionChangeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforecolumnresizeitabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeColumnResizeITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onendselectionchange.htm",
+    "Title": "TabSheetBox.OnEndSelectionChange"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onautofilteritabsheetboxeventsdelegate.htm",
+    "Title": "OnAutoFilterITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onafteredititabsheetboxeventsdelegate.htm",
+    "Title": "OnAfterEditITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforerowresize.htm",
+    "Title": "TabSheetBox.OnBeforeRowResize"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncolumnresizingitabsheetboxeventsdelegate.htm",
+    "Title": "OnColumnResizingITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/onbeforeedititabsheetboxeventsdelegate.htm",
+    "Title": "OnBeforeEditITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/delegate/oncolumnclickitabsheetboxeventsdelegate.htm",
+    "Title": "OnColumnClickITabSheetBoxEventsDelegate"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/uidevenv/01_development_environment/02_work_in_development_environment/devenv_object/entry_point.htm",
+    "Title": "Точка входа"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabscaleeventargs/itabscaleeventargs.htm",
+    "Title": "ITabScaleEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabsheeteventargs/itabsheeteventargs.tabsheet.htm",
+    "Title": "ITabSheetEventArgs.TabSheet"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabbeforeobjectanglechangeeventargs/itabbeforeobjectanglechangeeventargs.htm",
+    "Title": "ITabBeforeObjectAngleChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabbeforeobjectanglechangeeventargs/itabbeforeobjectanglechangeeventargs.cancel.htm",
+    "Title": "ITabBeforeObjectAngleChangeEventArgs.Cancel"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/enums/tabobjectchangetype.htm",
+    "Title": "TabObjectChangeType"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabsheeteventargs/itabsheeteventargs.htm",
+    "Title": "ITabSheetEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabobjecteventargs/itabobjecteventargs.htm",
+    "Title": "ITabObjectEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabobjectchangeeventargs/itabobjectchangeeventargs.type.htm",
+    "Title": "ITabObjectChangeEventArgs.Type"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabbeforeobjectanglechangeeventargs/tabbeforeobjectanglechangeeventargs.create.htm",
+    "Title": "TabBeforeObjectAngleChangeEventArgs.Create"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabobjectchangeeventargs/itabobjectchangeeventargs.htm",
+    "Title": "ITabObjectChangeEventArgs"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabobjecteventargs/itabobjecteventargs.object.htm",
+    "Title": "ITabObjectEventArgs.Object"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabbeforeobjectanglechangeeventargs/itabbeforeobjectanglechangeeventargs.newvalue.htm",
+    "Title": "ITabBeforeObjectAngleChangeEventArgs.NewValue"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabobjecteventargs/itabobjecteventargs.action.htm",
+    "Title": "ITabObjectEventArgs.Action"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/interface/itabobjectchangeeventargs/itabobjectchangeeventargs.object.htm",
+    "Title": "ITabObjectChangeEventArgs.Object"
+  },
+  {
+    "Address": "https://help.fsight.ru/ru/mergedProjects/tabsheet/class/tabsheetbox/tabsheetbox.onbeforeobjectchange.htm",
+    "Title": "TabSheetBox.OnBeforeObjectChange"
+  }
+]

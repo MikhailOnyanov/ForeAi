@@ -1,6 +1,8 @@
 import chromadb
 from chromadb import Collection, Client
 
+from app.conifg import ChromaConfig
+
 from ..services.base_vector_db_service import BaseVectorDBService
 from ..services.hashing_service import HashingService
 import logging
@@ -8,22 +10,25 @@ import logging
 logger = logging.getLogger(__name__)
 
 class ChromaService(BaseVectorDBService):
-    def __init__(self, client_info: dict):
-        self.client_info = client_info
-        self.client: Client = self.init_client(client_info)
+    def __init__(self, client_config: ChromaConfig):
+        self.client_config = client_config
+        self.client: Client = self.init_client(client_config)
 
-    @staticmethod
-    def init_client(client_info: dict):
-        if client_info.get('client_type', None) == 'http':
-            logger.info(f"Connecting to chroma server with creds: {client_info.get('client_kwargs')}")
+    def init_client(self, config: ChromaConfig):
+        """В зависимости от типа клиента Chroma возвращает клиент для взаимодействия с VectorDB."""
+        if config.CLIENT_TYPE == 'http':
+            logger.info(
+                f"Connecting to chroma server with creds: {config.HOST, config.PORT}")
             try:
-                client = chromadb.HttpClient(**client_info.get('client_kwargs'))
+                client = chromadb.HttpClient(host=config.HOST, port=config.PORT)
+                logger.info(f"CHROMA Heartbeat: {client.heartbeat()}")
                 return client
-            except Exception as ex:
+            except TimeoutError as ex:
                 logger.exception(f"TIMEOUT WHILE CONNECTING TO CHROMA: {ex}")
                 return None
         else:
-            raise NotImplementedError(f'Type {client_info.get('client_type', None)} is not implemented.')
+            raise NotImplementedError(
+                f'Type CLIENT_TYPE={config.CLIENT_TYPE} is not implemented.')
 
     def get_collection(self, collection_name: str) -> Collection | None:
         try:
@@ -75,4 +80,4 @@ class ChromaService(BaseVectorDBService):
                 )
 
     def list_collections(self):
-        return self.client.list_collections()
+        return [c.name for c in self.client.list_collections()]

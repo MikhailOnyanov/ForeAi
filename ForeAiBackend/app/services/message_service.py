@@ -1,7 +1,7 @@
 from ..internal.foresight_docs_logic import parse_chromadb_query_to_foresight_documents_old
 from ..services.llm_service_provider import LLMServiceProvider
 from ..services.vector_db_provider import VectorDBProvider
-from ..constants import chroma_service_config
+from ..dependencies import get_chroma_client
 import logging
 
 logger = logging.getLogger(__name__)
@@ -13,16 +13,19 @@ class MessageService:
         pass
 
     def make_response(self, message):
-        db_service = VectorDBProvider.get_vector_db_service("chroma", chroma_service_config)
+        db_service = get_chroma_client()
         llm_service = LLMServiceProvider.get_llm_service("YandexGPT")
         logger.info("Got YandexGPT service")
-        query_params = {'n_results': 3, 'query_texts': [message]}
+
         logger.info("Querying fore_collection from CHROMA")
+        query_params = {'n_results': 3, 'query_texts': [message]}
+        # Поиск документации для поставки в модель
         responses_from_db_service = db_service.query_collection('fore_collection', query_params)
         logger.info(f"Successfully queried CHROMA with response of: {len(responses_from_db_service)}")
+        # Нормализация ответов.
         normalized_responses = parse_chromadb_query_to_foresight_documents_old(responses_from_db_service)
 
-        # Пока что возвращает корпуса текстов из векторной БД
+        # Отправка исходного сообщения и дополнительных знаний в модель
         logger.info(f"Querying GPT with message: {message}")
         response_from_llm_service: str = llm_service.query(message, normalized_responses)
 
