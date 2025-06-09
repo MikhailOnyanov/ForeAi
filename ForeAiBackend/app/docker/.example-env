@@ -1,2 +1,4 @@
 CHROMA_HOST=chroma-server
 YANDEX_API_KEY=key
+BASIC_AUTH_USER=user
+BASIC_AUTH_PASSWORD=password

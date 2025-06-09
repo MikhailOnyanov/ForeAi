@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+from app.configuration import get_security_config
+from app.middleware.auth import BasicAuthMiddleware
 from .db import SQLModel, get_session, create_db_and_tables
 from .routers import documentation, data, message, customer_service
 import logging
@@ -34,6 +36,13 @@ app = FastAPI(
     },
     lifespan=lifespan,
 )
+
+
+app.add_middleware(
+    BasicAuthMiddleware,
+    security_config=get_security_config()  # передаём DI
+)
+
 
 app.include_router(documentation.router)
 app.include_router(data.router)
