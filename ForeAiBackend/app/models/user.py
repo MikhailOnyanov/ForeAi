@@ -1,9 +1,8 @@
-import uuid
-from uuid import UUID, uuid3
-
-from sqlmodel import SQLModel, Field, Relationship
-from typing import Optional, List
 from datetime import datetime
+from uuid import UUID
+
+from sqlmodel import Field, SQLModel
+
 
 # Base class for User model
 class UserBase(SQLModel):
@@ -29,8 +28,8 @@ class UserCreate(UserBase):
 
 # UPDATE user
 class UserUpdate(UserBase):
-    name: Optional[str] = None
-    email: Optional[str] = None
-    phone_number: Optional[str] = None
-    is_active: Optional[bool] = None
+    name: str | None = None
+    email: str | None = None
+    phone_number: str | None = None
+    is_active: bool | None = None
 

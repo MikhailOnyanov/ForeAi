@@ -1,17 +1,17 @@
 from abc import ABC, abstractmethod
-from typing import Optional, Collection, List
+from collections.abc import Collection
 
 
 class BaseVectorDBService(ABC):
     """Базовый класс для всех сервисов векторных БД."""
 
     @abstractmethod
-    def get_collection(self, collection_name: str) -> Optional[Collection]:
+    def get_collection(self, collection_name: str) -> Collection | None:
         """Получает коллекцию по имени."""
         raise NotImplementedError
 
     @abstractmethod
-    def get_collection_info(self, collection_name: str) -> Optional[dict]:
+    def get_collection_info(self, collection_name: str) -> dict | None:
         """Получает информацию о коллекции."""
         raise NotImplementedError
 
@@ -26,7 +26,7 @@ class BaseVectorDBService(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def add_to_collection(self, docs: List[dict], collection_name: str):
+    def add_to_collection(self, docs: list[dict], collection_name: str):
         """Добавляет документы в коллекцию."""
         raise NotImplementedError
 

@@ -2,3 +2,5 @@ CHROMA_HOST=chroma-server
 YANDEX_API_KEY=key
 BASIC_AUTH_USER=user
 BASIC_AUTH_PASSWORD=password
+BASIC_AUTH_SESSION_SECRET=long_and_random_secret
+BASIC_AUTH_REDIS_URL=redis://redis:6379/0

@@ -1,13 +1,14 @@
-from functools import cache
 import logging
+from functools import cache
 from typing import Annotated
 
 from fastapi import Depends
 
-from app.services.chroma_service import ChromaService
 from app.conifg import ChromaConfig
 from app.services.base_vector_db_service import BaseVectorDBService
+from app.services.chroma_service import ChromaService
 from app.services.vector_db_provider import VectorDBProvider
+
 
 logger = logging.getLogger(__name__)
 

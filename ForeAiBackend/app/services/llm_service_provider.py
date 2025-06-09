@@ -8,7 +8,6 @@ class LLMServiceProvider:
     @staticmethod
     def get_llm_service(llm_title: str) -> BaseLLMService:
         """Возвращает объект сервиса в зависимости от типа базы данных."""
-        if llm_title == "YandexGPT":
+        if llm_title == 'YandexGPT':
             return YandexGptService()
-        else:
-            raise NotImplementedError(f"LLM '{llm_title}' не поддерживается.")
+        raise NotImplementedError(f"LLM '{llm_title}' не поддерживается.")

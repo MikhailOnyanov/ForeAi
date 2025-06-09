@@ -1,18 +1,20 @@
-from typing import Annotated, List, Optional
-from fastapi import Depends, FastAPI, HTTPException, Query, APIRouter
-from sqlmodel import Field, Session, SQLModel, create_engine, select
-from uuid import uuid3, NAMESPACE_DNS
+from typing import Annotated
+from uuid import NAMESPACE_DNS, uuid3
 
-from ..models.user import UserCreate, UserPublic, User, UserUpdate
+from fastapi import APIRouter, HTTPException, Query
+from sqlmodel import select
+
 from ..db import SessionDep
+from ..models.user import User, UserCreate, UserPublic, UserUpdate
+
 
 router = APIRouter(
-    prefix="/customer_service",
-    tags=["customer_service"]
+    prefix='/customer_service',
+    tags=['customer_service']
 )
 
 
-@router.post("/users/", response_model=UserPublic)
+@router.post('/users/', response_model=UserPublic)
 def create_user(user: UserCreate, session: SessionDep):
     db_user = User.model_validate(user)
     db_user.uuid = uuid3(NAMESPACE_DNS, db_user.email)
@@ -23,7 +25,7 @@ def create_user(user: UserCreate, session: SessionDep):
     return db_user
 
 
-@router.get("/users/", response_model=list[UserPublic])
+@router.get('/users/', response_model=list[UserPublic])
 def read_users(
         session: SessionDep,
         offset: int = 0,
@@ -33,15 +35,15 @@ def read_users(
     return users
 
 
-@router.get("/users/{user_uuid}", response_model=UserPublic)
+@router.get('/users/{user_uuid}', response_model=UserPublic)
 def read_user(user_uuid: str, session: SessionDep):
     user = session.exec(select(User).where(User.uuid == user_uuid)).one_or_none()
     if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+        raise HTTPException(status_code=404, detail='User not found')
     return user
 
 
-@router.put("/users/{user_uuid}", response_model=UserPublic)
+@router.put('/users/{user_uuid}', response_model=UserPublic)
 def replace_or_create_user(user_uuid: str, user: UserCreate, session: SessionDep):
     db_user = session.exec(select(User).where(User.uuid == user_uuid)).one_or_none()
 
@@ -60,11 +62,11 @@ def replace_or_create_user(user_uuid: str, user: UserCreate, session: SessionDep
     return db_user
 
 
-@router.patch("/users/{user_uuid}", response_model=UserPublic)
+@router.patch('/users/{user_uuid}', response_model=UserPublic)
 def update_user(user_uuid: str, user: UserUpdate, session: SessionDep):
     db_user = session.exec(select(User).where(User.uuid == user_uuid)).one_or_none()
     if not db_user:
-        raise HTTPException(status_code=404, detail="User not found")
+        raise HTTPException(status_code=404, detail='User not found')
     user_data = user.model_dump(exclude_unset=True)
     db_user.sqlmodel_update(user_data)
     session.add(db_user)
@@ -73,11 +75,11 @@ def update_user(user_uuid: str, user: UserUpdate, session: SessionDep):
     return db_user
 
 
-@router.delete("/users/{user_uuid}")
+@router.delete('/users/{user_uuid}')
 def delete_user(user_uuid: str, session: SessionDep):
     user = session.exec(select(User).where(User.uuid == user_uuid)).one_or_none()
     if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+        raise HTTPException(status_code=404, detail='User not found')
     session.delete(user)
     session.commit()
-    return {"ok": True}
+    return {'ok': True}

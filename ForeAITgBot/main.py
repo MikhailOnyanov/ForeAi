@@ -11,8 +11,8 @@ bot = telebot.TeleBot(TELEGRAM_API_KEY)
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)  # Outputs debug messages to console.
 
-EXCEPTION_TEXT = f"Не могу обработать запрос :( \nСейчас сервис недоступен" \
-                 f"😢, но мы делаем всё, чтобы восстановить его работу! ⚙️"
+EXCEPTION_TEXT = "Не могу обработать запрос :( \nСейчас сервис недоступен" \
+                 "😢, но мы делаем всё, чтобы восстановить его работу! ⚙️"
 
 
 @bot.message_handler(commands=['start'])
@@ -29,7 +29,7 @@ def get_message_from_ai_model(message) -> str | None:
         response = requests.get(FORE_AI_BACKEND_API, params={"message": message})
         logger.debug(f"Response from service: {response}, {response.status_code}, {response.text}")
         if response.status_code == 500:
-            logger.warning(f"Message service returned 500, raising exception")
+            logger.warning("Message service returned 500, raising exception")
         elif response.status_code == 200:
             return response.text
         else:

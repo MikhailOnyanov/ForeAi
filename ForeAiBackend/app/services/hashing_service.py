@@ -1,15 +1,14 @@
 import hashlib
 import json
-from typing import Dict, Any
+from typing import Any
 
 
 class HashingService:
     def __init__(self):
         pass
     @staticmethod
-    def dict_hash(dictionary: Dict[str, Any]) -> str:
-        """
-        Вычисляет MD5-хэш словаря.
+    def dict_hash(dictionary: dict[str, Any]) -> str:
+        """Вычисляет MD5-хэш словаря.
 
         :param dictionary: Словарь для хэширования.
         :return: Строка с MD5-хэшем.

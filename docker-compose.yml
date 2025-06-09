@@ -92,9 +92,13 @@ services:
     build: ./ForeAITgBot
     ports:
       - "88:88"
-    depends_on:
-      postgres:
-        condition: service_healthy
+    networks:
+      - backend
+  redis:
+    image: redis:7
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
     networks:
       - backend
 
@@ -103,6 +107,7 @@ volumes:
   foreai-data:
   pgadmin-data:
   chroma_data:
+  redis-data:
 
 networks:
   backend:

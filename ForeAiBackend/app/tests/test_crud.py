@@ -1,6 +1,9 @@
-from fastapi.testclient import TestClient
-from ..main import app
 import logging
+
+from fastapi.testclient import TestClient
+
+from ..main import app
+
 
 LOGGER = logging.getLogger(__name__)
 
@@ -8,8 +11,8 @@ LOGGER = logging.getLogger(__name__)
 client = TestClient(app)
 
 def test_read_users():
-    response = client.get("/customer_service/users")
-    LOGGER.info(f"test_read_users response: {response.json()}")
+    response = client.get('/customer_service/users')
+    LOGGER.info(f'test_read_users response: {response.json()}')
     assert response.status_code == 200
     # assert response.json() == {"name": "Foo", "description": "A test item"}
 

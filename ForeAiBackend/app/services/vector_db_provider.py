@@ -8,7 +8,6 @@ class VectorDBProvider:
     @staticmethod
     def get_vector_db_service(db_type: str, client_info: dict) -> BaseVectorDBService:
         """Возвращает объект сервиса в зависимости от типа базы данных."""
-        if db_type == "chroma":
+        if db_type == 'chroma':
             return ChromaService(client_info)
-        else:
-            raise NotImplementedError(f"База данных '{db_type}' не поддерживается.")
+        raise NotImplementedError(f"База данных '{db_type}' не поддерживается.")

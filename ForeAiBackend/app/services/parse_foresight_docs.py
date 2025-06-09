@@ -1,16 +1,16 @@
-import regex
+import logging
 import unicodedata
+
+import regex
 import requests
 from bs4 import BeautifulSoup, Comment
-from typing import Dict, List
-import logging
+
 
 logger = logging.getLogger(__name__)
 
 
-def get_simple_texts(bs_instance: BeautifulSoup) -> List[str]:
-    """
-    Извлекает простой текст из параграфов, не содержащих атрибутов.
+def get_simple_texts(bs_instance: BeautifulSoup) -> list[str]:
+    """Извлекает простой текст из параграфов, не содержащих атрибутов.
 
     :param bs_instance: Экземпляр BeautifulSoup с HTML-контентом.
     :return: Список текстов из простых параграфов.
@@ -18,9 +18,8 @@ def get_simple_texts(bs_instance: BeautifulSoup) -> List[str]:
     return [p.get_text() for p in bs_instance.find_all('p') if not p.attrs]
 
 
-def parse_code_blocks(bs_instance: BeautifulSoup) -> List[List[str]]:
-    """
-    Извлекает блоки кода из HTML-страницы.
+def parse_code_blocks(bs_instance: BeautifulSoup) -> list[list[str]]:
+    """Извлекает блоки кода из HTML-страницы.
 
     :param bs_instance: Экземпляр BeautifulSoup с HTML-контентом.
     :return: Список списков строк кода.
@@ -30,14 +29,13 @@ def parse_code_blocks(bs_instance: BeautifulSoup) -> List[List[str]]:
 
     for p_code in paragraphs_code:
         if p_code.find('font') is not None:
-            all_code.append([unicodedata.normalize("NFKD", p_code.get_text())])
+            all_code.append([unicodedata.normalize('NFKD', p_code.get_text())])
 
     return all_code
 
 
 def tag_visible(element) -> bool:
-    """
-    Проверяет, является ли элемент HTML видимым на странице.
+    """Проверяет, является ли элемент HTML видимым на странице.
 
     :param element: HTML-элемент.
     :return: True, если элемент видимый, иначе False.
@@ -50,8 +48,7 @@ def tag_visible(element) -> bool:
 
 
 def text_from_html(body: str) -> str:
-    """
-    Извлекает основной текст страницы, исключая ненужные элементы.
+    """Извлекает основной текст страницы, исключая ненужные элементы.
 
     :param body: HTML-код страницы.
     :return: Очищенный текст страницы.
@@ -61,8 +58,8 @@ def text_from_html(body: str) -> str:
     visible_texts = list(filter(tag_visible, texts))
     page_full_text = ' '.join(t.strip() for t in visible_texts)
 
-    see_more_idx = page_full_text.find("См. также:")
-    fore_ver_copyright = page_full_text[page_full_text.find("Справочная система на версию"):]
+    see_more_idx = page_full_text.find('См. также:')
+    fore_ver_copyright = page_full_text[page_full_text.find('Справочная система на версию'):]
 
     if see_more_idx != -1:
         page_full_text = page_full_text[:see_more_idx] + fore_ver_copyright
@@ -71,36 +68,33 @@ def text_from_html(body: str) -> str:
 
 
 def find_header(body: str) -> str:
-    """
-    Извлекает заголовок страницы.
+    """Извлекает заголовок страницы.
 
     :param body: HTML-код страницы.
     :return: Заголовок страницы или стандартный заголовок "Документация Fore".
     """
     bs = BeautifulSoup(body, 'html.parser')
-    header = bs.find("h1")
+    header = bs.find('h1')
 
     if header:
         return header.text
 
-    title = bs.find("title")
-    return title.text if title else "Документация Fore"
+    title = bs.find('title')
+    return title.text if title else 'Документация Fore'
 
 
 def find_version(body: str) -> str:
-    """
-    Извлекает версию платформы из текста страницы.
+    """Извлекает версию платформы из текста страницы.
 
     :param body: Текст страницы.
     :return: Версия платформы или пустая строка, если версия не найдена.
     """
     version_match = regex.findall(r'система на версию .{1,4}', body)
-    return version_match[0].split()[-1] if version_match else ""
+    return version_match[0].split()[-1] if version_match else ''
 
 
-def collect_foresight_docs(sites: List[str]) -> List[Dict[str, str]]:
-    """
-    Собирает документацию с заданных веб-страниц.
+def collect_foresight_docs(sites: list[str]) -> list[dict[str, str]]:
+    """Собирает документацию с заданных веб-страниц.
 
     :param sites: Список URL-адресов страниц документации.
     :return: Список словарей с разделами документации, их текстами и версиями платформы.
@@ -114,11 +108,11 @@ def collect_foresight_docs(sites: List[str]) -> List[Dict[str, str]]:
             response.raise_for_status()
             page_text = response.text
 
-            result["Раздел документации"] = find_header(page_text)
-            result["Текст раздела"] = text_from_html(page_text)
-            result["Версия платформы"] = find_version(result["Текст раздела"])
+            result['Раздел документации'] = find_header(page_text)
+            result['Текст раздела'] = text_from_html(page_text)
+            result['Версия платформы'] = find_version(result['Текст раздела'])
         except requests.RequestException as ex:
-            logger.error(f"Ошибка при запросе {url}: {ex}")
+            logger.error(f'Ошибка при запросе {url}: {ex}')
 
         results.append(result)
 

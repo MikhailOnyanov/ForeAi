@@ -1,11 +1,13 @@
+import logging
+
 import chromadb
-from chromadb import Collection, Client
+from chromadb import Client, Collection
 
 from app.conifg import ChromaConfig
 
 from ..services.base_vector_db_service import BaseVectorDBService
 from ..services.hashing_service import HashingService
-import logging
+
 
 logger = logging.getLogger(__name__)
 
@@ -18,13 +20,13 @@ class ChromaService(BaseVectorDBService):
         """В зависимости от типа клиента Chroma возвращает клиент для взаимодействия с VectorDB."""
         if config.CLIENT_TYPE == 'http':
             logger.info(
-                f"Connecting to chroma server with creds: {config.HOST, config.PORT}")
+                f'Connecting to chroma server with creds: {config.HOST, config.PORT}')
             try:
                 client = chromadb.HttpClient(host=config.HOST, port=config.PORT)
-                logger.info(f"CHROMA Heartbeat: {client.heartbeat()}")
+                logger.info(f'CHROMA Heartbeat: {client.heartbeat()}')
                 return client
             except TimeoutError as ex:
-                logger.exception(f"TIMEOUT WHILE CONNECTING TO CHROMA: {ex}")
+                logger.exception(f'TIMEOUT WHILE CONNECTING TO CHROMA: {ex}')
                 return None
         else:
             raise NotImplementedError(
@@ -35,7 +37,7 @@ class ChromaService(BaseVectorDBService):
             collection = self.client.get_collection(collection_name)
             logger.info(f'Get collection {collection_name} success')
             return collection
-        except Exception as ex:
+        except Exception:
             logger.warning(f'Collection {collection_name} does not exist!')
             return None
 
@@ -44,7 +46,7 @@ class ChromaService(BaseVectorDBService):
             self.client.create_collection(collection_name)
             return True
         # If collection exists
-        except Exception as ex:
+        except Exception:
             logger.info(f'Collection {collection_name} already exists')
             return False
 
@@ -56,12 +58,11 @@ class ChromaService(BaseVectorDBService):
                 'element_count': collection.count(),
                 'top_10_elements': str(collection.peek().values()),
             }
-        else:
-            return None
+        return None
 
     def query_collection(self, collection_name: str, query_params: dict) -> dict:
         collection = self.get_collection(collection_name)
-        results = collection.query(**query_params, include=["documents", "metadatas"])
+        results = collection.query(**query_params, include=['documents', 'metadatas'])
         return results
 
     def add_to_collection(self, docs: list[dict], collection_name: str):
@@ -69,11 +70,11 @@ class ChromaService(BaseVectorDBService):
         if len(docs) > 0:
             for doc in docs:
                 collection.add(
-                    documents=[doc["Текст раздела"]],
+                    documents=[doc['Текст раздела']],
                     metadatas=[
                         {
-                            "Раздел документации": doc["Раздел документации"],
-                            "Версия платформы": doc["Версия платформы"]
+                            'Раздел документации': doc['Раздел документации'],
+                            'Версия платформы': doc['Версия платформы']
                         }
                     ],
                     ids=[str(HashingService.dict_hash(doc))]
